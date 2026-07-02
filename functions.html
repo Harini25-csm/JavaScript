@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Constructor function</h1>
+    <script>
+        function student(id,name,age){
+            this.id=id;
+            this.name=name;
+            this.age=age;
+        }
+        const a=new student(1,"abc",19);
+        document.write("id:"+a.id+", "+"name: "+a.name+", "+"age: "+a.age+" ")
+    </script>
+</body>
+</html>

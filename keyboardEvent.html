@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >keyboard events</h1>
+    <p>Type something in the input box.</p>
+    <input type="text" id="textbox" placeholder="Type here"/>
+    <p id="result">Keyboard event will show here.</p>
+    <script>
+        const textBox=document.getElementById("textbox");
+        const result=document.getElementById("result");
+        textbox.addEventListener("keydown",function (event){
+            result.innerHTML="key down:"+event.key;
+        });
+        textbox.addEventListener("keyup",function (event){
+            result.innerHTML="key up:"+event.key;
+        });
+    </script>
+</body>
+</html>

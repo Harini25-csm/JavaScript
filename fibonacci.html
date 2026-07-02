@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    // let a=0;
+// let b=1;
+// let arr=[];
+const size=prompt("enter the size of fibanacci series:");
+let arr=[0,1];
+for(let i=2;i<size;i++){
+    arr[i]=arr[i-1]+arr[i-2];
+    //let x=a+b;
+    // arr[i]=a;
+    // a=b;
+    // b=x;
+}
+document.write("Fibonacci Series: " + arr.join(", "));
+// for(x of arr){
+//     console.log(x);
+// }
+</script>
+</html>

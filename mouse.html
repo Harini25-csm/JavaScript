@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mousebox{
+            width:400px;
+            height: 350px;
+            border: 2px solid black;
+            background-color: aquamarine;
+            justify-content: center;
+            display:flex;
+            align-items: center;
+        }
+        #resultbox{
+            width:450px;
+            height: 200px;
+            border: 2px solid black;
+            margin-top: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mouse Events in JavaScript</h1>
+    <div id="mousebox" class="eventbox">use mouse here</div>
+    <div id="resultbox">
+        <p id ="eventName">Event name will show here.</p>
+        <p id ="eventDetails">Event details will show here.</p>
+    </div>
+    <script>
+    const mousebox=document.getElementById("mousebox");
+    const eventName=document.getElementById("eventName");
+    const eventDetails=document.getElementById("eventDetails");
+    mousebox.addEventListener("click",function(){
+        eventName.innerHTML="Event:click";
+        eventDetails.innerHTML="You clicked the box one time.";
+        mousebox.style.backgroundColor="lightgreen";
+        mousebox.innerHTML="Clicked";
+    });
+    mousebox.addEventListener("dblclick",function(){
+        eventName.innerHTML="Event:dblclick";
+        eventDetails.innerHTML="You clicked the box double time.";
+        mousebox.style.backgroundColor="orange";
+        mousebox.innerHTML="Clicked";
+    });
+    mousebox.addEventListener("mouseover",function(){
+        eventName.innerHTML="Event:mouseover";
+        eventDetails.innerHTML="You clicked the box one time.";
+        mousebox.style.backgroundColor="green";
+        mousebox.innerHTML="Clicked";
+    });
+    mousebox.addEventListener("mouseout",function(){
+        eventName.innerHTML="Event:climouseoutck";
+        eventDetails.innerHTML="You clicked the box one time.";
+        mousebox.style.backgroundColor="pink";
+        mousebox.innerHTML="Clicked";
+    });
+    mousebox.addEventListener("mouseup",function(){
+        eventName.innerHTML="Event:mouseup";
+        eventDetails.innerHTML="You clicked the box one time.";
+        mousebox.style.backgroundColor="yellow";
+        mousebox.innerHTML="Clicked";
+    });
+    mousebox.addEventListener("mousedown",function(){
+        eventName.innerHTML="Event:mousedown";
+        eventDetails.innerHTML="You clicked the box one time.";
+        mousebox.style.backgroundColor="blue";
+        mousebox.innerHTML="Clicked";
+    });
+    mousebox.addEventListener("mousemove",function(){
+        eventName.innerHTML="Event:mousemove";
+        eventDetails.innerHTML="You clicked the box one time.";
+        mousebox.style.backgroundColor="red";
+        mousebox.innerHTML="Clicked";
+    });
+    </script>
+</body>
+</html>

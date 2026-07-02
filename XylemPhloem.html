@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Xylem and Phloem Number</title>
+</head>
+<body>
+    <h2>Xylem and Phloem Number Checker</h2>
+    <input type="number" id="n" placeholder="Enter a number">
+    <p id="result"></p>
+    <script>
+        document.getElementById("n").addEventListener("input", function() {
+            let num = this.value;
+            if (num === "") {
+                document.getElementById("result").innerHTML = "";
+                return;
+            }
+            let temp = num.toString();
+            let fd = parseInt(temp[0]);
+            let ld = parseInt(temp[temp.length - 1]);
+            let sum = fd + ld;
+            let meansum = 0;
+            for (let i = 1; i < temp.length - 1; i++) {
+                meansum += parseInt(temp[i]);
+            }
+            if (sum === meansum) {
+                document.getElementById("result").innerHTML = num + " is a Xylem Number";
+            } else {
+                document.getElementById("result").innerHTML = num + " is a Phloem Number";
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- 
+Let's test the number 15239
+Extreme Digits: 1 and 9.
+Sum: \(1 + 9 = 10\)
+Mean Digits: 5, 2, and 3.
+Sum: \(5 + 2 + 3 = 10\)
+Result: Since the extreme sum 10
+equals the mean sum 10, 15239 is a Xylem number (not a Phloem number). -->

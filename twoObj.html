@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function raju(id,gender,age){
+            this.id=id;
+            this.gender=gender;
+            this.age=age;
+        }
+        const a=new raju(1,"M",22);
+        const b=new raju(2,"M",26);
+        document.write("id:"+a.id+", "+"name: "+a.name+", "+"age: "+a.age+" "+"<br>");
+        document.write("id:"+b.id+", "+"name: "+b.name+", "+"age: "+b.age+" "+"<br>");
+        let rani={
+            id:1,
+            gender:"F",
+            age:19
+        };
+        for(let k in rani){
+            document.write(k+":"+rani[k]+"<br>");
+        }
+        
+    </script>
+
+</body>
+</html>

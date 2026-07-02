@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=prompt("enter the number:");
+        let num=n;
+        while(n!=0&&n!=1&&n!=4){
+            let sum=0;
+            while(n>0){
+                let r=n%10;
+                sum=sum+r*r;
+                n=Math.floor(n/10);
+            }
+        n=sum;
+        }
+        if(n==1){
+            document.write(num+ "is a happy number");
+        }else{
+            document.write(num+ "not a happy number");
+        }
+    </script>
+    
+</body>
+
+</html>
+<!-- <script>
+    const result = document.getElementById("result");
+
+    const events = {
+        clickBtn: "click",
+        dblclickBtn: "dblclick",
+        overBtn: "mouseover",
+        outBtn: "mouseout",
+        downBtn: "mousedown",
+        upBtn: "mouseup",
+        moveBtn: "mousemove"
+    };
+
+    for (let id in events) {
+        document.getElementById(id).addEventListener(events[id], () => {
+            result.innerHTML = `${events[id]} Event`;
+        });
+     -->

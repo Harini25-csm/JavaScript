@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Mouse Events</h2>
+    <p id="result"></p>
+    <button id="clickBtn" >click</button><br>
+    <button id="dblclickBtn">double click</button><br>
+    <button id="overBtn">mouse over</button><br>
+    <button id="outBtn">mouse out</button><br>
+    <button id="downBtn">mouse down</button><br>
+    <button id="upBtn">mouse up</button><br>
+    <button id="moveBtn">mouse move</button><br>
+
+    <script>
+        const result=document.getElementById("result");
+        document
+            .getElementById("clickBtn")
+            .addEventListener("click",function() {
+                result.innerHTML="click Event";
+            });
+        document
+            .getElementById("dblclickBtn")
+            .addEventListener("dblclick",function() {
+                result.innerHTML="mouse double click Event";
+            });
+        document
+            .getElementById("overBtn")
+            .addEventListener("mouseover",function() {
+                result.innerHTML="mouse over click Event";
+            });
+        document
+            .getElementById("outBtn")
+            .addEventListener("mouseout",function() {
+                result.innerHTML="mouse out click Event";
+            });
+        document
+            .getElementById("downBtn")
+            .addEventListener("mousedown",function() {
+                result.innerHTML="mouse down click Event";
+            });
+        document
+            .getElementById("upBtn")
+            .addEventListener("mouseup",function() {
+                result.innerHTML="mouse up click Event";
+            });
+        document
+            .getElementById("moveBtn")
+            .addEventListener("mousemove",function() {
+                result.innerHTML="mouse move click Event -x:"+event.offsetX+",Y:"+event.offsetY;
+            });
+    </script>
+</body>
+</html>
