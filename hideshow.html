@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text">Hello JS</h1>
+    <button onclick="hide()">Hide the text</button>
+    <button onclick="show()">show the text</button>
+    <script>
+        const a=document.getElementById("text");
+        function hide(){
+            a.style.display="none";
+        }
+        function show(){
+            a.style.display="block";
+            a.style.backgroundColor="orange";
+        }
+    </script>
+</body>
+</html>

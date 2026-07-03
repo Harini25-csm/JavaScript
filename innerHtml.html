@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>InnerHTML Example</title>
+    </head>
+    <body>
+        <form name="f1">
+            <input type="button" value="comment" onclick="showComment()">
+            <div id="location"></div>
+        </form>
+        <script>
+            function showComment(){
+                var data=
+                "Name:<input type='text' name='name'><br>"+
+                "comment:<br>"+
+                "<input type='textarea' rows='50' cols='80'></textarea><br>"+
+                "<input type='submit' value='Post Comment' onclick='postComment()'>";
+                document.getElementById("location").innerHTML=data;
+            }
+            function postComment(){
+                alert("Thank you for your comment");
+            }
+        </script>
+    </body>
+</html>

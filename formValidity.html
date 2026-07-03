@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" onsubmit="return validation()">
+        name:<input type="text" name="name"><br><br>
+        password:<input type="password" name="password">
+        <input type="submit" value="register">
+    </form>
+    <script>
+        function validation(){
+            var na=document.myform.name.value;
+            var pass=document.myform.password.value;
+            if(na==null || na==""){
+                alert("name can't be null");
+                return false;
+            }else if(pass.length<6){
+                alert("password length must be >6");
+                return false;
+            }else{
+                alert("registed successfully!");
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

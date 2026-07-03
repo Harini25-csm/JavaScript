@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">Hello JS</p>
+    <br>
+    <br>
+
+    <button onclick="s1()">color</button>
+    <button onclick="s2()">background</button>
+    <button onclick="s3()">font size</button>
+    <button onclick="s4()">bold</button>
+    <button onclick="s5()">italic</button>
+    <button onclick="s6()">underline</button>
+    <button onclick="s7()">center</button>
+    <button onclick="s8()">upper case</button>
+    <button onclick="s9()">border</button>
+    <button onclick="s10()">border radius</button>
+    <button onclick="s11()">padding</button>
+    <button onclick="s12()">margin</button>
+    <button onclick="s13()">width</button>
+    <button onclick="s14()">height</button>
+    <button onclick="s15()">opacity</button>
+    <button onclick="s16()">box shadow</button>
+    <button onclick="s17()">transform</button>
+    <button onclick="s18()">transition</button>
+    <button onclick="hide()">Display None</button>
+    <button onclick="show()">Display Block</button>
+    <script>
+        const a=document.getElementById("text");
+        function s1(){a.style.color="blue";}
+        function s2(){a.style.background="orange";}
+        function s3(){a.style.fontSize="20px";}
+        function s4(){a.style.fontWeight="bold";}
+        function s5(){a.style.fontStyle="italic";}
+        function s6(){ a.style.textDecoration="underline";}
+        function s7(){a.style.textAlign="center";}
+        function s8(){a.style.textTransform="uppercase";}
+        function s9(){a.style.border="5px solid red";}
+        function s10(){a.style.borderRadius="15px";}
+        function s11(){a.style.padding="15px";}
+        function s12(){a.style.margin="5px";}
+        function s13(){a.style.width="350px";}
+        function s14(){a.style.height="120px";}
+        function s15(){a.style.opacity="0.5";}
+        function s16(){a.style.boxShadow="7px 7px 14px green";}
+        function s17(){a.style.transform="rotate(350deg)";}
+        function s18(){a.style.transition="5s"; a.style.background="yellow"}
+        function hide(){a.style.display="none";}
+        function show(){a.style.display="block";}
+    </script>
+</body>
+</html>
