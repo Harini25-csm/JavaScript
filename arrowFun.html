@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: blue;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h2>JavaScript Arrow Function Examples</h2>
+    <div id="output"></div>
+    <script>
+        let result = "";
+        // 1. Arrow function without parameters
+        const greet = () => "Welcome to JavaScript Arrow Functions!";
+        result += "<p><b>Greeting:</b> " + greet() + "</p>";
+        // 2. Arrow function with one parameter
+        const square = num => num * num;
+        result += "<p><b>Square of 6:</b> " + square(6) + "</p>";
+        // 3. Arrow function with multiple parameters
+        const add = (a, b) => a + b;
+        result += "<p><b>Sum of 15 and 25:</b> " + add(15, 25) + "</p>";
+        // 4. Recursive Arrow Function (Factorial)
+        const factorial = n => {
+            if (n === 0 || n === 1)
+                return 1;
+            return n * factorial(n - 1);
+        };
+        result += "<p><b>Factorial of 5:</b> " + factorial(5) + "</p>";
+        // 5. Recursive Arrow Function (Countdown)
+        const countdown = n => {
+            if (n === 0) {
+                return "0";
+            }
+            return n + " → " + countdown(n - 1);
+        };
+        result += "<p><b>Countdown:</b> " + countdown(5) + "</p>";
+        document.getElementById("output").innerHTML = result;
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="employee"></p>
+    <p id="largest"></p>
+    <p id="largest1"></p>
+    <script type="module">
+        import {emp,largest,lar} from "./export.js";
+        document.getElementById("employee").innerHTML="empname:"+emp.name+", salary"+emp.salary+", age:"+emp.age+"<br>";
+        document.getElementById("largest").innerHTML=largest(10, 25, 7, 42); 
+        document.getElementById("largest1").innerHTML=lar(1,4,2); 
+    </script>
+</body>
+</html>

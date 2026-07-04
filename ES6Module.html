@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ES6 Module</h1>
+    <p id="factorial"></p>
+    <p id="student"></p>
+    <script type="module">
+        import {fact,stu} from "./export.js";
+        document.getElementById("factorial").innerHTML=fact(4);
+        document.getElementById("student").innerHTML="stuname:"+stu.name+", age:"+stu.age+", usn:"+stu.usn;
+    </script>
+</body>
+</html>

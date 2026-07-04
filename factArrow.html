@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        let result="";
+        const factorial = n => {
+            if (n === 0 || n === 1)
+                return 1;
+            return n * factorial(n - 1);
+        };
+        result += "<p><b>Factorial of 5:</b> " + factorial(5) + "</p>";
+        document.getElementById("output").innerHTML = result;
+    </script>
+</body>
+</html>
